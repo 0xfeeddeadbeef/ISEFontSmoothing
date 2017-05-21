@@ -1,12 +1,12 @@
 ﻿param (
-    [string] $OutDir = '.\bld',
+    [string] $OutDir = '.\bld\ISEFontSmoothing\',
     [switch] $Publish,
     [string] $ApiKey
 )
 
 if (-not (Test-Path $OutDir))
 {
-    New-Item -ItemType Directory -Path $OutDir -Verbose | Out-Null
+    New-Item -ItemType Directory -Path $OutDir -Force -Verbose | Out-Null
 }
 
 Copy-Item -Path @('.\*.psd1','.\*.psm1') -Destination $OutDir -Force -Verbose
