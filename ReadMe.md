@@ -21,7 +21,7 @@ After:
 Install-Module ISEFontSmoothing
 ```
 
-2. Add module import to your ISE profile (`"$env:UserProfile\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1"`):
+2. Add module import to your ISE profile:
 
 ```powershell
 "Import-Module ISEFontSmoothing" | Add-Content -Path "$env:UserProfile\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1"
@@ -31,5 +31,5 @@ Install-Module ISEFontSmoothing
 
 ### Known Issues
 
-Because modules get loaded after entire Host UI has already been initialized, font smoothing machinery provided by this addon does not come into effect **until** you open new editor tab (Ctrl+N) or new PowerShell tab (Ctrl+T).
+Because profiles get loaded after entire Host UI has already been initialized, font smoothing machinery provided by this addon does not come into effect **until** you open new editor tab (Ctrl+N) or new PowerShell tab (Ctrl+T).
 This behavior is by design.
