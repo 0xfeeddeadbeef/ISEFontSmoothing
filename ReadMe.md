@@ -4,20 +4,18 @@
 
 For all the perfectionists out there:
 
-Before:
-![before][]
-
-After:
-![after][]
+| Before      | After      |
+| ------------| -----------|
+| ![before][] | ![after][] |
 
 **If you noticed the difference, — this addon is for you.**
 
 [before]: assets/Before.png
 [after]: assets/After.png
 
-### Installation
+## Installation
 
-1. Install from PowerShell Gallery:
+1. Install the module from PowerShell Gallery:
 
 ```powershell
 Install-Module ISEFontSmoothing
@@ -26,12 +24,13 @@ Install-Module ISEFontSmoothing
 2. Add module import to your ISE profile:
 
 ```powershell
-"Import-Module ISEFontSmoothing" | Add-Content -Path "$env:UserProfile\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1"
+'Import-Module ISEFontSmoothing' |
+    Add-Content -Path "$env:UserProfile\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1"
 ```
 
-3. Relaunch ISE.
+3. Relaunch the ISE.
 
-### Known Issues
+## Known Issues
 
 Because profiles get loaded after entire Host UI has already been initialized, font smoothing machinery
 provided by this addon does not come into effect **until** you open new editor tab (Ctrl+N) or new
