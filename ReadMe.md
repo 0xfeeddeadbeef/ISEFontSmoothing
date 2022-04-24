@@ -1,5 +1,7 @@
 ﻿# PowerShell ISE Font Smoothing Addon
 
+[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/ISEFontSmoothing?color=blue&style=for-the-badge)](https://www.powershellgallery.com/packages/ISEFontSmoothing/)
+
 For all the perfectionists out there:
 
 Before:
@@ -31,5 +33,6 @@ Install-Module ISEFontSmoothing
 
 ### Known Issues
 
-Because profiles get loaded after entire Host UI has already been initialized, font smoothing machinery provided by this addon does not come into effect **until** you open new editor tab (Ctrl+N) or new PowerShell tab (Ctrl+T).
-This behavior is by design.
+Because profiles get loaded after entire Host UI has already been initialized, font smoothing machinery
+provided by this addon does not come into effect **until** you open new editor tab (Ctrl+N) or new
+PowerShell tab (Ctrl+T). This behavior is by design (of ISE, not this addon).
